@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="aestetik.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="aestetik.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+tgKtF4O+Ih5Ikp6fRbMS1nu8nWRf+81YD2fdAu6cZUy3Uq" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
@@ -12,55 +12,108 @@
     <title>Cheap Ass Otome</title>
 </head>
 <body>
+    
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div id="myCarousel" class="carousel text-carousel" data-bs-ride="carousel" data-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <h1>...</h1>
+                            <h2>Choose</h2>
                         </div>
                         <div class="carousel-item">
-                            <h3>...</h3>
+                            <h3>your</h3>
                         </div>
                         <div class="carousel-item">
-                            <p>Holi</p>
+                            <h1>Heart♥throb</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-md-4 text-center">
+        <div id="customAlert" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <p id="popupText"></p>
+            </div>
+        </div>
+        
+        <div class="row h-100">
+            <div class="col-md-3 text-center">
                 <div class="card" id="card1">
                     <img class="card-img-top" src="https://i.pinimg.com/736x/c9/e5/61/c9e561d61fc50771ece1255125f7fb1a.jpg" alt="Card 1">
                     <div class="card-body">
                         <h5 class="card-title">Profile 1</h5>
                         <button class="btn btn-primary" data-card="1">Elegir carta</button>
+                        <p class="personality-info"></p>
+                        <button class="btn btn-info show-personality-button" data-card="1" hidden>Show Personality</button>
+                        <p class="info" hidden></p>
                     </div>
                 </div>
             </div>
     
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <div class="card" id="card2">
                     <img class="card-img-top" src="https://i.pinimg.com/736x/c9/e5/61/c9e561d61fc50771ece1255125f7fb1a.jpg" alt="Card 2">
                     <div class="card-body">
                         <h5 class="card-title">Profile 2</h5>
                         <button class="btn btn-primary" data-card="2">Elegir carta</button>
+                        <p class="personality-info"></p>
+                        <button class="btn btn-info show-personality-button" data-card="2" hidden>Show Personality</button>
+                        <p class="info" hidden></p>
                     </div>
                 </div>
             </div>
     
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <div class="card" id="card3">
                     <img class="card-img-top" src="https://i.pinimg.com/736x/c9/e5/61/c9e561d61fc50771ece1255125f7fb1a.jpg" alt="Card 3">
                     <div class="card-body">
                         <h5 class="card-title">Profile 3</h5>
                         <button class="btn btn-primary" data-card="3">Elegir carta</button>
+                        <p class="personality-info"></p>
+                        <button class="btn btn-info show-personality-button" data-card="3" hidden>Show Personality</button>
+                        <p class="info" hidden></p>
                     </div>
                 </div>
             </div>
+            
+            <div class="col-md-3 text-center">
+                <canvas id="drawingCanvas" width="400" height="400" style="border: 1px solid #000;"></canvas>
+
+                <script>
+                    const canvas = document.getElementById('drawingCanvas');
+                    const context = canvas.getContext('2d');
+            
+                    let isDrawing = false;
+            
+                    canvas.addEventListener('mousedown', (event) => {
+                        isDrawing = true;
+                        context.beginPath();
+                        context.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+                    });
+            
+                    canvas.addEventListener('mousemove', (event) => {
+                        if (isDrawing) {
+                            context.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+                            context.stroke();
+                        }
+                    });
+            
+                    canvas.addEventListener('mouseup', () => {
+                        isDrawing = false;
+                        context.closePath();
+                    });
+            
+                    canvas.addEventListener('mouseleave', () => {
+                        isDrawing = false;
+                        context.closePath();
+                    });
+                </script>
+            </div>
+            <button id="chooseHeartthrobButton" class="btn btn-choose" hidden>Choose your Heartthrob</button>
         </div>
     </div>
+
 </body>
 </html>

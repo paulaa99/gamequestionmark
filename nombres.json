@@ -1,14 +1,68 @@
 [
     {
-        "name": "Billy",
+        "name": "Ava Murphy",
         "image": "https://e7.pngegg.com/pngimages/667/720/png-clipart-male-character-with-green-shirt-illustration-bugs-bunny-cartoon-character-businessperson-business-people-business-woman-white.png"
     },
     {
-        "name": "Timmy",
+        "name": "Emily Wilson",
         "image": "https://w7.pngwing.com/pngs/337/270/png-transparent-cartoon-character-teacher-3d-computer-graphics-photography-cartoon.png"
     },
     {
-        "name": "Ellie",
+        "name": "Grace Thomas",
+        "image": "https://png.pngtree.com/png-clipart/20190119/ourmid/pngtree-office-staff-cartoon-character-cartoon-characters-cartoon-character-png-image_480229.jpg"
+    },
+    {
+        "name": "Andrei Petrov",
+        "image": "https://e7.pngegg.com/pngimages/667/720/png-clipart-male-character-with-green-shirt-illustration-bugs-bunny-cartoon-character-businessperson-business-people-business-woman-white.png"
+    },
+    {
+        "name": "Pierre Dupont",
+        "image": "https://w7.pngwing.com/pngs/337/270/png-transparent-cartoon-character-teacher-3d-computer-graphics-photography-cartoon.png"
+    },
+    {
+        "name": "Wei Chen",
+        "image": "https://png.pngtree.com/png-clipart/20190119/ourmid/pngtree-office-staff-cartoon-character-cartoon-characters-cartoon-character-png-image_480229.jpg"
+    },
+
+    {
+        "name": "David Kim",
+        "image": "https://e7.pngegg.com/pngimages/667/720/png-clipart-male-character-with-green-shirt-illustration-bugs-bunny-cartoon-character-businessperson-business-people-business-woman-white.png"
+    },
+    {
+        "name": "Henrik Andersen",
+        "image": "https://w7.pngwing.com/pngs/337/270/png-transparent-cartoon-character-teacher-3d-computer-graphics-photography-cartoon.png"
+    },
+    {
+        "name": "Elena Volkova",
+        "image": "https://png.pngtree.com/png-clipart/20190119/ourmid/pngtree-office-staff-cartoon-character-cartoon-characters-cartoon-character-png-image_480229.jpg"
+    },
+    {
+        "name": "Mai Nguyen",
+        "image": "https://e7.pngegg.com/pngimages/667/720/png-clipart-male-character-with-green-shirt-illustration-bugs-bunny-cartoon-character-businessperson-business-people-business-woman-white.png"
+    },
+    {
+        "name": "Max Fischer",
+        "image": "https://w7.pngwing.com/pngs/337/270/png-transparent-cartoon-character-teacher-3d-computer-graphics-photography-cartoon.png"
+    },
+    {
+        "name": "Ethan Brown",
+        "image": "https://png.pngtree.com/png-clipart/20190119/ourmid/pngtree-office-staff-cartoon-character-cartoon-characters-cartoon-character-png-image_480229.jpg"
+    },
+    {
+        "name": "Olivia Garcia",
+        "image": "https://e7.pngegg.com/pngimages/667/720/png-clipart-male-character-with-green-shirt-illustration-bugs-bunny-cartoon-character-businessperson-business-people-business-woman-white.png"
+    },
+    {
+        "name": "Emma Adams",
+        "image": "https://w7.pngwing.com/pngs/337/270/png-transparent-cartoon-character-teacher-3d-computer-graphics-photography-cartoon.png"
+    },
+    {
+        "name": "Elijah Patel",
+        "image": "https://png.pngtree.com/png-clipart/20190119/ourmid/pngtree-office-staff-cartoon-character-cartoon-characters-cartoon-character-png-image_480229.jpg"
+    },
+    {
+        "name": "Avery Thomas",
         "image": "https://png.pngtree.com/png-clipart/20190119/ourmid/pngtree-office-staff-cartoon-character-cartoon-characters-cartoon-character-png-image_480229.jpg"
     }
+
 ]
